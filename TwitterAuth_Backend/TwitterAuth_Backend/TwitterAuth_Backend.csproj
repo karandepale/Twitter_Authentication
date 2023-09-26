@@ -5,6 +5,7 @@
   </PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="OAuth.DotNetCore" Version="3.0.1" />
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
 	</ItemGroup>
 
