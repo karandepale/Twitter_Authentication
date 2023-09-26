@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { RequestToken } from '../Model/RequestToken.model';
+import { TwitterAuthService } from '../Service/twitter-auth.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -43,4 +46,5 @@ this.twitterService.getRequestToken()
    location.href = "https://api.twitter.com/oauth/authenticate?" + this.requestToken.oauth_token;
    }
  );
+  }
 }

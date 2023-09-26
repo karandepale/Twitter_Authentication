@@ -1,11 +1,14 @@
 import { Injectable } from '@angular/core';
+import { RequestToken } from '../Model/RequestToken.model';
+import { HttpClient, HttpParams } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TwitterAuthService {
 
-  baseUrl = "https://localhost:44356/api/";
+  baseUrl = "https://localhost:44365/api/";
 
   constructor(private http: HttpClient) { }
 
