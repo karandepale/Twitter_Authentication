@@ -7,5 +7,7 @@ namespace TwitterAuth_Backend.Data
     {
         Task<RequestTokenResponse> GetRequestToken();
         Task<UserModelDto> GetAccessToken(string token, string oauthVerifier);
+     //   Task<UserInfoResponse> GetUserInfo(string accessToken, string accessTokenSecret);
+
     }
 }

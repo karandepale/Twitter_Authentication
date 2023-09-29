@@ -20,6 +20,8 @@ getAccessToken(oauth_token: string, oauth_verifier: string): Observable<any> {
    const params = new HttpParams()
      .set('oauth_token', oauth_token)
      .set('oauth_verifier', oauth_verifier);
- 
+console.log("Karan :- O-AUTH TOKEN:-" ,oauth_token ) 
+console.log("Karan :- O-AUTH VERIFIER:-" ,oauth_verifier ) 
+
    return this.http.get(this.baseUrl + 'TwitterClient/sign-in-with-twitter', { params });
  }}

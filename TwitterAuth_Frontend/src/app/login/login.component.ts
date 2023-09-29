@@ -14,8 +14,11 @@ export class LoginComponent implements OnInit {
   disableButton = false;
   isLoading = false;
 
+
+  
   constructor(private twitterService: TwitterAuthService, private route: ActivatedRoute, private router: Router) 
   { 
+    console.log("REQUEST TOKEN :-" , this.requestToken);
 
     this.route.queryParamMap.subscribe(params => {
       const oauth_token = this.route.snapshot.queryParamMap.get('oauth_token');
@@ -48,3 +51,4 @@ this.twitterService.getRequestToken()
  );
   }
 }
+

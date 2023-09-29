@@ -1,0 +1,157 @@
+// .mainContainer{
+//     // background-color: black;
+//     width:100%;
+//     min-height:80vh;
+//     margin:0px; 
+//     padding:0px;
+//     box-sizing: border-box;
+//     display: flex;
+//     justify-content: center;
+//     // margin-top:auto;
+// }
+// .matCardContainer {
+//     // background-color:#154c79
+//     box-sizing: border-box;
+//     background-color: #11286e;
+//     width: 40%;
+//     margin-top: 5vh;
+//     height: 50vh;
+//     // background-color: white;
+//     box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2); /* Increase the blur and spread radius */
+// }
+
+// h1 ,h3{
+//     text-align: center;
+//     color:white;
+// }
+
+
+// .btncontainer{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin-top: 50px;
+// }
+
+// button{
+//     width:200px;
+//     height:50px;
+//     background-color:#1e81b0;
+//     color:white;
+//     // border: 2px solid black;
+//     outline: none;
+//     border: none;
+
+//     cursor: pointer;
+//     font-size: 15px;
+// }
+// button:hover{
+//     background-color: aqua;
+//     transition: 0.5s;
+//     color:black;
+// }
+
+// .imgClass{
+//     cursor: pointer;
+// }
+
+// .footer{
+//     margin-top:50px;
+// }
+// .footer h4{
+//     color:white;
+//     margin:10px;
+//     text-align: center;
+// }
+
+
+
+
+/* Default styles for screens larger than 768px */
+.mainContainer {
+    background-color: beige;
+    width: 100%;
+    min-height: 80vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the top of the container */
+}
+
+.matCardContainer {
+    box-sizing: border-box;
+    background-color: #11286e;
+    width: 40%;
+    margin-top: 5vh;
+    min-height: 50vh; /* Minimum height to contain content */
+    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: space-between; /* Distribute space evenly between children */
+}
+
+h1, h3 {
+    text-align: center;
+    color: white;
+}
+
+.btncontainer {
+    display: flex;
+    // flex-direction: column; /* Stack children in a column */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Reduce top margin */
+    max-height: 30%; /* Limit the height to 30% of parent container */
+    overflow-y: auto; /* Add a scrollbar when content exceeds the height */
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    background-color: #1e81b0;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.button-container {
+    margin-bottom: 20px; /* Add space between button and footer */
+}
+
+.button-container:last-child {
+    margin-bottom: 0; /* Remove margin for the last button */
+}
+
+button:hover {
+    background-color: aqua;
+    transition: 0.5s;
+    color: black;
+}
+
+.imgClass {
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 20px; /* Reduce top margin */
+    max-height: 20%; /* Limit the height to 20% of parent container */
+    overflow-y: auto; /* Add a scrollbar when content exceeds the height */
+}
+
+.footer h4 {
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Responsive styles for screens up to 768px wide */
+@media (max-width: 768px) {
+    .matCardContainer {
+        width: 80%;
+    }
+}
+
